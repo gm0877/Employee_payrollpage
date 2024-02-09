@@ -1,0 +1,114 @@
+
+.fullindex{
+    background-color:white;
+    font-size: small;
+    color:red;
+    line-height: 25px;
+    height: 9vh;
+    width: 100%;
+    justify-content: start;
+    padding-top: 0px;
+    margin-top: 0px;
+
+}
+.image_class{
+    padding-left: 3%;
+    height: 1%;
+    margin-left: 0px;
+    justify-content: start;
+    
+
+
+
+}
+.p5{
+   color: #82A70C;
+   padding-left:100px;
+    
+}
+
+
+.p6{
+    color:#42515F;
+    padding-left: 100px;
+}
+
+.payroll{
+    color: #42515F;
+    
+}
+.ed{
+    color: #42515F;
+  margin-left:110px;
+  margin-bottom: 150px;
+}
+body{
+    background-color: #F7F7F7;
+}
+.search{
+    margin-left: 898px;
+    border-radius: 20px;
+}
+.adduser{
+    background-color: #82A70C;
+    color: white;
+}
+.row1{
+    background-color: #42515F;
+    line-height: 37px;
+    color: white;
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    
+}
+.name{padding-left: 50px;}
+.gender{padding-left: 200px;}
+.department{padding-left: 70px;}
+.salary{padding-left: 120px;}
+.startdate{padding-left: 70px;}
+.actions{ padding-left: 80px;}
+.row2{
+    background-color: #FFFFFF;
+    color: #3D3D3D;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:medium;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 220px;
+      
+}
+.male{
+    padding-left: 175px;
+}
+.male1{
+    padding-left: 185px;
+}
+.male2{
+    padding-left: 211px;
+}
+.male3{
+    padding-left: 170px;
+}
+.male4{
+    padding-left: 165px;
+}
+.male5{
+    padding-left: 188px;
+}
+.male6{
+    padding-left: 160px;
+}
+.sales{
+    padding-left: 80px;
+}
+.money{
+    padding-left: 100px;
+}
+.startdaterow2{
+    padding-left: 100px;
+}
+.actions_row2{
+    padding-left: 100px;
+}
