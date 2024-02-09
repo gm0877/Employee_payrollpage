@@ -122,27 +122,5 @@ document.getElementById("cancel").addEventListener("click",function(){
 
 
 
-// document.getElementById("employeeForm").addEventListener("submit",function(event){
-//     event.preventDefault();
-
-// var name = document.querySelector('.name').value;
-
-
-// var selectedPhoto = document.querySelector('input[name="profilePhoto"]:checked').value;
-
-
-// var selectedGender = document.getElementById('option1').checked;
-
-// var q=selectedGender? "male":"female";
-
-// var selectedDepartments = [];
-// var hr=document.getElementById('op1').checked;
-// var sales=document.getElementById('op2').checked;
-// var finance=document.getElementById('op3').checked;
-
-// if (hr==true){
-
-
-
 
 
