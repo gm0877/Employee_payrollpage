@@ -11,111 +11,39 @@ function func(){
     let d4=document.getElementById("same14").checked;
     let d5=document.getElementById("same15").checked;
 
-    l=[]
+    let l=[]
     if(d1){
         l.push('HR')
     }
-    else if(d2){
+    if(d2){
         l.push('Sales')
     }
-    else if(d3){
+    if(d3){
         l.push('Finance')
     }
-    else if(d4){
+    if(d4){
         l.push('Engineer')
     }
-    else{
+    if(d5){
         l.push('Others')
     }
+    
     let obj={
         "name":a1,
         "Gender":a5 ? "male" : "female",
+        "department":l,
         "Salary":a2,
-        "Start_date":a3,
-        "Notes":a4,
-        "department":l
-
-        
+        "Start_date":a3
     }
-    console.log(obj)
+ 
+    console.log(obj);
+ 
 
 
 }
 document.getElementById("cancel").addEventListener("click",function(){
     func();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "id": "13f3",
+      "name": "lalith",
+      "Gender": "male",
+      "department": [
+        "HR",
+        "Engineer"
+      ],
+      "Salary": "25,000-50,000",
+      "Start_date": "2024-02-02"
+    },
+    {
+      "id": "10ac",
+      "name": "lalith",
+      "Gender": "female",
+      "department": [
+        "HR",
+        "Engineer"
+      ],
+      "Salary": "",
+      "Start_date": ""
+    },
+    {
+      "id": "a10e",
+      "name": "lalith",
+      "Gender": "female",
+      "department": [
+        "HR",
+        "Engineer"
+      ],
+      "Salary": "",
+      "Start_date": ""
+    },
+    {
+      "image": "employee_rollpage/assets/mani.jpg",
+      "name": "lalithedited",
+      "Gender": "female",
+      "department": [
+        "HR",
+        "Engineer"
+      ],
+      "Salary": "",
+      "Start_date": "",
+      "id": "4331"
+    }
+  ]
+}

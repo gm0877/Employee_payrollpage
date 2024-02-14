@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee play roll</title>
     <link href="/CSS/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-   
+    
+
 </head>
 <body>
     
@@ -33,13 +36,13 @@
         <div id="profile_section">
         <label class="same2">Profile Image</label>
         <div id=same2>
-        <input   type="radio">
+        <input  name="profile" value="/assets/mani.jpg" type="radio" id="profile1">
         <img  class="me" src="/assets/mani.jpg" alt="manikanta image" class="center">
-        <input type="radio">
-        <img class="me" src="/assets/manikanta.jpg" alt="mani image" class="center">
-        <input type="radio">
+        <input name="profile" value="/assets/manikanta.jpg" type="radio" id="profile2">
+        <img class="me"  src="/assets/manikanta.jpg" alt="mani image" class="center">
+        <input name="profile" value="/assets/gokul.jpg" type="radio" id="profile3">
         <img  class="me" src="/assets/gokul.jpg" alt="gokul image" class="center">
-        <input type="radio">
+        <input name="profile" value="/assets/leela.jpg" type="radio" id="profile4">
         <img class="me" src="/assets/leela.jpg" alt="leela image" class="center">
     </div>
     </div>
@@ -49,9 +52,9 @@
         <div id="same3">
         
         
-        <label> <input type="radio"  id="gcheck">Male</label>
+        <label> <input type="radio"  id="gcheck" name="gender">Male</label>
       
-        <label>   <input type="radio">Female</label>
+        <label>   <input type="radio" name="gender">Female</label>
         
     </div>
     </div>
@@ -92,7 +95,8 @@
         <a href="/pages/index1.html"><input type="button" value="Cancel"  class="cancel1"></button></a>
         <label class="button"></label>
         
-       <input id="cancel" type="button" value="submit">
+       <a href="/pages/index1.html"><input id="cancel" type="button" value="submit"></a>
+       
         
         <input class="cancel2" type="reset">
     </nav>
@@ -100,7 +104,60 @@
     </form>
     </div>
 </center>
-<script src="/Javascript/index.js"></script>
+<script>
+
+    window.onload = function () {
+        // Check if there is an editId query parameter
+        var urlParams = new URLSearchParams(window.location.search);
+        var editId = urlParams.get('editId');
+        console.log(editId);
+        if (editId) {
+            $.ajax({
+                url: "http://localhost:3000/data/" + editId,
+                type: 'GET',
+                success: function (record) {
+                    // Pre-fill the form fields with the retrieved data
+                    $('#nameid').val(record.name);
+                    $('input[name="gender"][value="' + record.gender + '"]').prop('checked', true);
+                   $('input[name="profile"][value="' + record.image+ '"]').prop('checked', true);
+                    record.department.forEach(function (dept) {
+                        switch (dept) {
+                            case 'HR':
+                                $('#same4').prop('checked', true);
+                                break;
+                            case 'Sales':
+                                $('#same12').prop('checked', true);
+                                break;
+                            case 'Finance':
+                                $('#same13').prop('checked', true);
+                                break;
+                            case 'Engineer':
+                                $('#same14').prop('checked', true);
+                                break;
+                            case 'Others':
+                                $('#same15').prop('checked', true);
+                                break;
+                        }
+                    });
+                    $('#salary1').val(record.salary)
+                    $("#same6").val(record.startdate)
+                   
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error fetching record:', error);
+                }
+            });
+        }
+        
+    };
+    </script>
+
+    
+<script src="/Javascript/dashboard.js"></script>
+<script src="/Javascript/form.js"></script> 
+ 
+
 </body>
+
 </div>
 </html>

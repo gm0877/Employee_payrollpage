@@ -1,0 +1,23 @@
+{
+  "name": "employee_rollpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server":"json-server --watch employeepayroll.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gm0877/Employee_payrollpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gm0877/Employee_payrollpage/issues"
+  },
+  "homepage": "https://github.com/gm0877/Employee_payrollpage#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}

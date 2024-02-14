@@ -6,6 +6,7 @@
     line-height: 25px;
     height: 9vh;
     width: 100%;
+    
     justify-content: start;
     padding-top: 0px;
     margin-top: 0px;
@@ -43,7 +44,7 @@
   margin-bottom: 150px;
 }
 body{
-    background-color: #F7F7F7;
+    background-color: #E3E3E3;
 }
 .search{
     margin-left: 898px;
@@ -54,7 +55,7 @@ body{
     color: white;
 }
 .row1{
-    background-color: #42515F;
+    /* background-color: #42515F; */
     line-height: 37px;
     color: white;
     width: 1200px;
@@ -63,30 +64,36 @@ body{
     margin-left: 100px;
     
 }
-.name{padding-left: 50px;}
-.gender{padding-left: 200px;}
-.department{padding-left: 70px;}
-.salary{padding-left: 120px;}
-.startdate{padding-left: 70px;}
-.actions{ padding-left: 80px;}
-.row2{
+#headerfile{
+    background-color: #42515F;
+}
+.name{padding-left: 50px;padding-right: 50px;}
+.gender{padding-left: 50px;padding-right: 50px;}
+.department{padding-left: 35px;padding-right: 35px;}
+.salary{padding-left: 60px;padding-right: 60px;}
+.startdate{padding-left: 35px;padding-right: 35px;}
+.actions{ padding-left: 40px;padding-right: 40px;}
+#check1{
+    display: flexbox;
+    /* justify-content:center;
+    justify-items: auto;     */
     background-color: #FFFFFF;
     color: #3D3D3D;
     font-family: 'Times New Roman', Times, serif;
     font-size:medium;
-    justify-content: center;
+   
     margin-left: 100px;
-    margin-right: 220px;
+    /* margin-right: 220px; */
       
 }
-.male{
+/* .male{
     padding-left: 175px;
 }
 .male1{
     padding-left: 185px;
 }
 .male2{
-    padding-left: 211px;
+    padding-left: 2600px;
 }
 .male3{
     padding-left: 170px;
@@ -111,4 +118,29 @@ body{
 }
 .actions_row2{
     padding-left: 100px;
+} */
+#check1{
+    background-color:white;
+    display: flexbox;
+    flex-direction: center;
+}
+/* #FFFFFF */
+/* #sq{
+    border-radius: 30px;
+    background-color: #E9FEA5;
+} */
+#del{
+    color:red;
+    display: inline;
+    margin-left: 8px;
+    background-color: #E3E3E3;
+    
+}
+#edi{
+        color:red;
+        background-color: #E3E3E3;
+        margin-left: 20px;
+        /* justify-content: space-around; */
+        
+    
 }
